@@ -9,6 +9,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag teamatlas/php-7-and-git:latest
+    - name: One Click Docker
+      uses: pangzineng/Github-Action-One-Click-Docker@v1.1.1

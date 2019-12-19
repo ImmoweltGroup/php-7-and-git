@@ -9,11 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: echo $PWD
-    - run: find
+    - run: find /github/workspace
       
-    - name: One Click Docker
-      uses: pangzineng/Github-Action-One-Click-Docker@v1.1.1
-      env: 
-        DOCKER_USERNAME: teamatlas
-        DOCKER_NAMESPACE: teamatlas
+#     - name: One Click Docker
+#       uses: pangzineng/Github-Action-One-Click-Docker@v1.1.1
+#       env: 
+#         DOCKER_USERNAME: teamatlas
+#         DOCKER_NAMESPACE: teamatlas
